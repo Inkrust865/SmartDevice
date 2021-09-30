@@ -2,12 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Liga A: Smart Device</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/logo-mobile@1x.png 1x, img/logo-mobile@2x.png 2x">
+          <img class="page-header__logo-image" src="img/logo-desktop@1x.png" width="202" height="52" srcset="img/logo-desktop@2x.png 2x" alt="Smart Device">
+        </picture>
+      </a>
+      <div class="page-header__container">
+        <ul class="page-header__contacts contacts-list">
+          <li class="contacts-list__item contacts-list__item--mail">
+            <a class="contacts-list__link" href="mailto:info@sd.ru">
+              <span class="cotacts-list__mail">info@sd.ru</span>
+            </a>
+          </li>
+          <li class="contacts-list__item contacts-list__item--phone">
+            <a class="contacts-list__link" href="tel:84950005252">
+              <span class="contacts-list__phone">+7 (495) 000 52 52</span>
+            </a>
+          </li>
+        </ul>
+        <button class="page-header__toggle" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+      </div>
+    </div>
+
+  </header>
 </body>
 </html>

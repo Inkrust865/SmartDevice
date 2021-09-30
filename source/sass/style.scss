@@ -1,5 +1,8 @@
-body {
-  color: green;
-}
-
+@import "mixins.scss";
+@import "variables/colors.scss";
+@import "variables/fonts.scss";
+@import "variables/width.scss";
+@import "blocks/fonts.scss";
 @import "blocks/body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/contacts-list.scss";
