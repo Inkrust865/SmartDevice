@@ -1,3 +1,23 @@
 body {
   margin: 0;
+  width: 100%;
+}
+
+.body--nojs {
+  .page-footer__title--nojs {
+    background-image: url("../../img/icons/Minus.svg");
+    background-size: 16px 1px;
+    background-position: top 8px left;
+    background-repeat: no-repeat;
+
+    & + .page-footer__nav {
+      display: block;
+      position: relative;
+    }
+
+    & + .page-footer__contacts-wrapper {
+      display: block;
+      position: relative;
+    }
+  }
 }

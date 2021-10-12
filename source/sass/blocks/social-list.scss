@@ -1,0 +1,40 @@
+.social-list__link {
+  display: block;
+  margin-right: 15.5px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.4;
+    outline: none;
+  }
+}
+
+.social-list__item {
+  width: 27px;
+  height: 27px;
+
+  background-color: $base-color-1;
+  background-image: url("../../img/socials/fb.svg");
+  background-size: 27px 27px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+
+  &--vk {
+    background-image: url("../../img/socials/vk.svg");
+  }
+
+  &--odn {
+    background-image: url("../../img/socials/odn.svg");
+  }
+}

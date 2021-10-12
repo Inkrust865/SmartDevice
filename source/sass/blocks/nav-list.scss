@@ -1,0 +1,29 @@
+.nav-list__item {
+  &:nth-child(n+5) {
+    margin-left: 45px;
+  }
+}
+
+.nav-list__link {
+  color: $base-color-2;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    outline: none;
+  }
+
+  &:active {
+    color: $accent-color;
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .nav-list__item {
+    &:nth-child(n+5) {
+      margin-left: 0;
+    }
+  }
+}

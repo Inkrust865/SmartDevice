@@ -1,0 +1,205 @@
+.intro {
+  display: flex;
+  justify-content: stretch;
+
+  background-color: $base-color-2;
+  background-image:
+    url("../../img/boards-desktop@1x.png"),
+    url("../../img/Mask-polygons.png"),
+    url("../../img/Mask-background-desktop.png");
+  background-repeat: no-repeat;
+  background-size:
+    705px 515px,
+    auto,
+    auto;
+  background-position:
+    top 61% left 85.5%,
+    bottom center,
+    top -85px center;
+
+    margin-top: -1px;
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 1420px;
+  margin: 0 auto;
+
+  color: $base-color-1;
+}
+
+.intro__title {
+  font-family: $accent-font;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  margin: 232px 0 0;
+}
+
+.intro__description {
+  position: relative;
+
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+
+  width: 683px;
+  margin: 0;
+  margin-top: 25px;
+  padding-left: 97px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 66px;
+    height: 2px;
+    background-color: $base-color-1;
+  }
+}
+
+.intro__button {
+  font-family: $accent-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $base-color-1;
+
+  width: 407px;
+  margin: 45px 0 278px 98px;
+  padding: 17px 28px;
+
+  background-color: $accent-color;
+  border: 1px solid $element-background;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $element-background;
+    border: 1px solid $base-color-1;
+    opacity: 1;
+    outline: none;
+  }
+}
+
+.intro__button-name {
+  &--mobile {
+    display: none;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .intro {
+    background-image:
+      url("../../img/boards-tablet@1x.png"),
+      url("../../img/background-tablet.jpg");
+    background-size:
+      260px 340px,
+      100% auto;
+    background-position:
+      top 16% right,
+      top -70px center;
+    background-repeat: no-repeat;
+  }
+
+  .intro__wrapper {
+    width: 594px;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.07em;
+
+    width: 470px;
+    margin-top: 117px;
+  }
+
+  .intro__description {
+    font-size: 18px;
+    line-height: 156.8%;
+
+    width: 410px;
+    margin-top: 32px;
+    padding-left: 52px;
+
+    &::before {
+      top: 13px;
+      width: 33px;
+    }
+  }
+
+  .intro__button {
+    width: 379px;
+    margin: 55px 0 164px 52px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .intro {
+    background-image:
+      url("../../img/boards-mobile@1x.png"),
+      url("../../img/background-mobile.jpg");
+    background-size:
+      294px 220px,
+      100% auto;
+    background-position:
+      top 9% left 95%,
+      top -60px center;
+    background-repeat: no-repeat;
+    overflow: visible;
+  }
+
+  .intro__wrapper {
+    width: 290px;
+  }
+
+  .intro__title {
+    font-size: 40px;
+    line-height: 47px;
+
+    width: 277px;
+    margin-top: 227px;
+  }
+
+  .intro__description {
+    font-size: 16px;
+
+    width: 225px;
+    margin-top: 28px;
+    padding-left: 51px;
+  }
+
+  .intro__button {
+    width: 100%;
+    margin: 43px 0 70px;
+  }
+
+  .intro__button-name {
+    &--mobile {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}

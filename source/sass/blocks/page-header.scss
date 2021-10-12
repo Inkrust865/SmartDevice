@@ -3,7 +3,12 @@
   justify-content: stretch;
   align-items: center;
 
+  height: 85px;
+
   background-color: $base-color-2;
+  background-image: url("../../img/Mask-background-desktop.png");
+  background-position: top center;
+  background-repeat: no-repeat;
 
   color: $base-color-1;
 }
@@ -33,7 +38,7 @@
   flex-wrap: wrap;
 }
 
-.page-header__toggle {
+.page-header__button {
   position: relative;
 
   background-color: $element-background;
@@ -52,9 +57,32 @@
   text-transform: uppercase;
 
   color: #FFFFFF;
+
+  &:hover {
+    background-color: rgba(255,255,255,0.2);
+  }
+
+  &:focus {
+    background-color: rgba(255,255,255,0.2);
+    outline: none;
+  }
+
+  &:active {
+    background-color: $base-color-1;
+    color: $accent-color;
+    outline: none;
+  }
 }
 
 @media (max-width: $desktop-width) {
+  .page-header {
+    background-image: url("../../img/background-tablet.jpg");
+    background-position: top center;
+    background-size: 100% auto;
+
+    height: 70px;
+  }
+
   .page-header__wrapper {
     align-items: center;
 
@@ -66,12 +94,18 @@
     margin-top: -3px;
   }
 
-  .page-header__toggle {
+  .page-header__button {
     display: none;
   }
 }
 
 @media (max-width: $tablet-width) {
+  .page-header {
+    background-image: url("../../img/background-mobile.jpg");
+
+    height: 60px;
+  }
+
   .page-header__wrapper {
     margin-top: 17px;
     width: 290px;
