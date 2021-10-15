@@ -26,7 +26,7 @@
   flex-direction: column;
 
   width: 48.5%;
-  height: 299px;
+  min-height: 299px;
   margin-bottom: 30px;
   padding: 40px 45px;
 
@@ -88,8 +88,8 @@
 
   .advantages__item {
     width: 345px;
-    height: 306px;
-    padding: 24px 19px 0 26px;
+    min-height: 232px;
+    padding: 24px 19px 20px 26px;
 
     &:nth-child(n+3) {
       height: 232px;

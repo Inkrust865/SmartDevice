@@ -8,7 +8,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: $base-color-1;
+  color: $base-color-2;
 
   background-color: rgba(255,255,255,0.1);
   border: 1px solid $element-background;
@@ -47,7 +47,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: $base-color-1;
+  color: $base-color-2;
 
   background-color: rgba(255,255,255,0.1);
   border: 1px solid $element-background;
@@ -158,8 +158,18 @@
   }
 }
 
-.form__checkbox:not(:checked) + label::after {
-  content: none;
+.form__checkbox {
+  &:hover,
+  &:focus {
+    & + .form__checkbox-name {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+
+  &:not(:checked) + label::after {
+    content: none;
+  }
 }
 
 .form__checkbox-name {

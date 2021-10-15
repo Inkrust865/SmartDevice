@@ -43,11 +43,11 @@
         <p class="modal__text">
           Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
         </p>
-        <form class="modal__form form">
+        <form class="modal__form form" action="https://echo.htmlacademy.ru" method="get">
           <input type="text" class="form__input form__input--modal" placeholder="Имя" name="user-name" aria-label="Введите свое имя" required>
           <input type="tel" class="form__input form__input--modal" placeholder="Телефон" name="user-phone" aria-label="Введите свой номер телефона" required>
           <textarea class="form__textarea form__textarea--modal" placeholder="Ваш вопрос" name="user-question" aria-label="Задайте ваш вопрос"></textarea>
-          <button class="form__button form__button--modal" type="button">Отправить</button>
+          <button class="form__button form__button--modal" type="submit">Отправить</button>
           <div class="form__checkbox-wrapper form__checkbox-wrapper--modal">
             <input type="checkbox" class="form__checkbox visually-hidden" name="personal-data-processing" id="checkbox" required>
             <label for="checkbox" class="form__checkbox-name">
@@ -182,9 +182,9 @@
               Мы проконсультируем Вас бесплатно
             </span>
           </p>
-          <form class="feedback__form form" action="" method="post">
-            <input type="text" class="form__input" placeholder="Имя" aria-label="Введите свое имя">
-            <input type="tel" class="form__input" name="user-phone" placeholder="Телефон" aria-label="Введите свой номер телефона">
+          <form class="feedback__form form"  action="https://echo.htmlacademy.ru" method="get">
+            <input type="text" class="form__input" placeholder="Имя" aria-label="Введите свое имя" required>
+            <input type="tel" class="form__input" name="user-phone" placeholder="Телефон" aria-label="Введите свой номер телефона" required>
             <textarea class="form__textarea" placeholder="Ваш вопрос" aria-label="Задайте ваш вопрос"></textarea>
             <button class="form__button" type="submit">Задать вопрос</button>
             <div class="form__checkbox-wrapper">
@@ -235,7 +235,7 @@
 
         <div class="page-footer__middle-wrapper">
           <div class="page-footer__container page-footer__container--nav accordion-item">
-            <h3 class="page-footer__title">Разделы сайта</h3>
+            <h3 class="page-footer__title" tabindex="0">Разделы сайта</h3>
             <ul class="page-footer__nav nav-list accordion-item__content">
               <li class="nav-list__item">
                 <a href="#" class="nav-list__link">
@@ -276,7 +276,7 @@
           </div>
           <div class="page-footer__bottom-wrapper">
             <div class="page-footer__contacts accordion-item">
-              <h3 class="page-footer__title">Наш офис</h3>
+              <h3 class="page-footer__title" tabindex="0">Наш офис</h3>
               <div class="page-footer__contacts-wrapper accordion-item__content">
                 <p class="page-footer__address">
                   г. Мытищи, Олимпийский проспект, д.10

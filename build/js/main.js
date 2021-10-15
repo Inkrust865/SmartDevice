@@ -35,6 +35,9 @@
   buttonFeedback.addEventListener('click', function(evt) {
     evt.preventDefault();
     modalFeedback.classList.add('modal--show');
+    window.onscroll = function(){
+      return false;
+    }
 
     if (storage) {
       userName.value = storage;
