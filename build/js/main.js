@@ -14,7 +14,6 @@
   var form = modalFeedback.querySelector('modal__form');
   var phone = modalFeedback.querySelector('[name=user-phone]');
   var question = modalFeedback.querySelector('[name=user-question]');
-  var checkbox = modalFeedback.querySelector('[name=personal-data-processing]');
   var buttonSubmit = modalFeedback.querySelector('.form__button');
 
   var buttonScroll = document.querySelector('.intro__button');
@@ -69,11 +68,11 @@
   })
 
   window.addEventListener('click', function(evt) {
-    evt.preventDefault();
     if (evt.target !== buttonFeedback) {
       if (modalFeedback.classList.contains('modal--show')) {
         if (evt.button === MouseButtons.LEFT) {
           if (evt.target === modalFeedback) {
+            evt.preventDefault();
             modalFeedback.classList.remove('modal--show');
           }
         }
@@ -138,12 +137,6 @@
   var footerAccordion = accordion();
   footerAccordion.init('.page-footer__middle-wrapper');
 
-  /*var element = document.getElementById('phone');
-  var maskOptions = {
-    mask: '+{7}(0000000000)'
-  };
-  var mask = IMask(element, maskOptions);*/
-
   window.addEventListener("DOMContentLoaded", function() {
       [].forEach.call( document.querySelectorAll('[name=user-phone]'), function(input) {
       var keyCode;
@@ -178,7 +171,6 @@
       input.addEventListener("keydown", mask, false)
 
     });
-
   });
 })();
 

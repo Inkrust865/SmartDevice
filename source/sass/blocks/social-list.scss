@@ -23,7 +23,7 @@
   height: 27px;
 
   background-color: $base-color-1;
-  background-image: url("../../img/socials/fb.svg");
+  background-image: url("../../img/icon-fb.svg");
   background-size: 27px 27px;
   background-position: top left;
   background-repeat: no-repeat;
@@ -31,10 +31,10 @@
 
 
   &--vk {
-    background-image: url("../../img/socials/vk.svg");
+    background-image: url("../../img/icon-vk.svg");
   }
 
   &--odn {
-    background-image: url("../../img/socials/odn.svg");
+    background-image: url("../../img/icon-odn.svg");
   }
 }

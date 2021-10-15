@@ -14,7 +14,6 @@
   var form = modalFeedback.querySelector('modal__form');
   var phone = modalFeedback.querySelector('[name=user-phone]');
   var question = modalFeedback.querySelector('[name=user-question]');
-  var checkbox = modalFeedback.querySelector('[name=personal-data-processing]');
   var buttonSubmit = modalFeedback.querySelector('.form__button');
 
   var buttonScroll = document.querySelector('.intro__button');
@@ -69,11 +68,11 @@
   })
 
   window.addEventListener('click', function(evt) {
-    evt.preventDefault();
     if (evt.target !== buttonFeedback) {
       if (modalFeedback.classList.contains('modal--show')) {
         if (evt.button === MouseButtons.LEFT) {
           if (evt.target === modalFeedback) {
+            evt.preventDefault();
             modalFeedback.classList.remove('modal--show');
           }
         }
@@ -172,7 +171,6 @@
       input.addEventListener("keydown", mask, false)
 
     });
-
   });
 })();
 

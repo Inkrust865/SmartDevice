@@ -85,7 +85,7 @@
     height: 63px;
 
     background-color: $accent-color;
-    background-image: url("../../img/icons/Vector.svg");
+    background-image: url("../../img/icon-vector.svg");
     background-size: 8px auto;
     background-position: top 27px left 30px;
     background-repeat: no-repeat;
@@ -149,6 +149,10 @@
 
     background-size: 100% auto;
 
+    &::after {
+      bottom: 1px;
+    }
+
     &--first {
       background-image: url("../../img/services/service1-tablet.png");
     }
@@ -186,6 +190,10 @@
     padding: 20px 34px;
 
     background-size: 100% auto;
+
+    &::after {
+      bottom: 3px;
+    }
 
     &--first {
       background-image: url("../../img/services/service1-mobile.png");

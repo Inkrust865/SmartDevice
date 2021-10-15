@@ -1,10 +1,10 @@
 .page__wrapper-united {
   background-color: $base-color-1;
   background-image:
-    url("../../img/icons/Polygon-grey-left-small.svg"),
-    url("../../img/icons/Polygon-grey-left-big.svg"),
-    url("../../img/icons/Polygon-grey-right-big.svg"),
-    url("../../img/icons/Polygon-grey-right-small.svg");
+    url("../../img/icon-polygon-grey-left-small.svg"),
+    url("../../img/icon-polygon-grey-left-big.svg"),
+    url("../../img/icon-polygon-grey-right-big.svg"),
+    url("../../img/icon-polygon-grey-right-small.svg");
   background-repeat: no-repeat;
   background-size:
     225px auto,
@@ -20,7 +20,7 @@
 
 @media (max-width: $desktop-width) {
   .page__wrapper-united {
-    background-image: url("../../img/icons/Polygon-grey-right-big.svg");
+    background-image: url("../../img/icon-polygon-grey-right-big.svg");
     background-repeat: no-repeat;
     background-size: 870px auto;
     background-position: top 33% left -210%;

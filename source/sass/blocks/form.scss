@@ -144,6 +144,10 @@
     .form__checkbox-name {
       text-decoration: underline;
     }
+
+    .form__checkbox:checked + label::after {
+      content: "";
+    }
   }
 
   &--modal {
@@ -156,10 +160,6 @@
 
 .form__checkbox:not(:checked) + label::after {
   content: none;
-}
-
-.form__checkbox:checked + label::after {
-  content: "";
 }
 
 .form__checkbox-name {
@@ -190,7 +190,7 @@
     width: 16px;
     height: 16px;
 
-    background-image: url("../../img/icons/checkmark.svg");
+    background-image: url("../../img/icon-checkmark.svg");
     background-size: 10px auto;
     background-position: top 4px left 3px;
     background-repeat: no-repeat;
@@ -221,7 +221,8 @@
   .form__checkbox-name {
     margin-top: 10px;
 
-    &::before {
+    &::before,
+    &::after {
       top: 11px;
       left: 3px;
     }
@@ -259,7 +260,8 @@
   .form__checkbox-name {
     margin: 0;
 
-    &::before {
+    &::before,
+    &::after {
       top: 0;
       left: 0;
     }
